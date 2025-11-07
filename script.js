@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de GIFs - Giphy API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GIFs Favoritos</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Ingresa un tema (ej: perros, café, triste)" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <main id="gifs-container"></main>
+
+    <div class="pagination-controls">
+        <button id="next-page-btn" disabled>Siguiente Página &rarr;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

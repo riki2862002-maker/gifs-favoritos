@@ -1,0 +1,103 @@
+/* Estilos Base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ff5757; /* Color Giphy-like */
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#search-form input[type="text"],
+#search-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#search-form input[type="text"] {
+    width: 60%;
+    max-width: 400px;
+}
+
+#search-form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-form button:hover {
+    background-color: #45a049;
+}
+
+/* Contenedor de GIFs (Rubro 8) */
+#gifs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+#gifs-container img {
+    width: 100%;
+    max-width: 280px; /* Tamaño fijo para desktop */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+#gifs-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Controles de Paginación (Rubro 12) */
+.pagination-controls {
+    padding: 20px;
+}
+
+.pagination-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Media Query para Móviles (Interfaz Amigable - Rubro 6) */
+@media (max-width: 600px) {
+    #search-form input[type="text"] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    #gifs-container img {
+        max-width: 90%; /* GIFs más grandes en móvil */
+    }
+    
+    header {
+        padding: 15px 10px;
+    }
+}
